@@ -1,0 +1,12 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+convert_csv_to_json:
+    path: /convert-csv-to-json
+    controller: App\Controller\CsvDataController::convertCsvToJson
+# config/routes.yaml
+modifier_donnees:
+    path: /modifier-donnees
+    controller: 'App\Controller\CsvDataController::modifierDonnees'

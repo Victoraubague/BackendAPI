@@ -1,0 +1,16 @@
+{# templates/csv_data/modifier_donnees.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier les données{% endblock %}
+
+{% block body %}
+    <h1>Modifier les données</h1>
+
+    {{ form_start(form) }}
+    {{ form_row(form.identifier) }}
+    {{ form_row(form.newData) }}
+
+    <button type="submit" class="btn btn-primary">Modifier</button>
+    {{ form_end(form) }}
+{% endblock %}
